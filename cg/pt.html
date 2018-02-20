@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Raytracing</title>
+	<title>Path Tracing</title>
 	<meta charset="utf-8">
 	<meta name="author" content="pixelhint.com">
 	<meta name="description" content="Magnetic is a stunning responsive HTML5/CSS3 photography/portfolio website  template"/>
@@ -41,31 +41,35 @@
 
 	<section class="main clearfix">
 
-        <section class="top" style="background-image: url('../img/mine/cg/ray/2.jpg')">
+        <section class="top" style="background-image: url('../img/mine/cg/pt/2.jpg')">
 			<div class="wrapper content_header clearfix">
 				<div class="work_nav">
 
 				</div><!-- end work_nav -->
-				<h1 class="title">Raytracing</h1>
+				<h1 class="title">Monte Carlo Path Tracing</h1>
 			</div>		
 		</section><!-- end top -->
 
 		<section class="wrapper">
 			<div class="content">
 				<p><b>Type: </b>Computer graphics, C++ programming</p>
-                <p><b>Description: </b>I wrote a fully functioning recursive ray tracer for the course Introduction to computer graphics.
-                    I shoot out rays from the eye of a camera and calculate intersections with primitives in a scene using their implicit equations.
-                    This ray tracer supports reflections, shadows, texture mapping, and some other more complicated rendering techniques.
+                <p><b>Description: </b>I implemented a physically-based renderer based on the path tracing
+                    algorithm. Path tracing is a simple, elegant Monte Carlo sampling approach to solving the
+                    rendering equation. It generates recursive bounce rays in a physically-accurate
+                    manner, making it an unbiased estimator for the rendering equation. My path tracer support a wide
+                    variety of visual effects (soft shadows, color bleeding, caustics, reflection and refraction, etc.)
                 </p>
                 <p><b>Tools: </b>Qt creator, C++</p>
                 <br/>
 
-                <img src="../img/mine/cg/ray/1.jpg" class="media innerimg" alt=""/>
-                <img src="../img/mine/cg/ray/3.jpg" class="media innerimg" alt=""/>
-                <img src="../img/mine/cg/ray/2.jpg" class="media innerimg" alt=""/>
-                <img src="../img/mine/cg/ray/4.jpg" class="media innerimg" alt=""/>
-                <img src="../img/mine/cg/ray/5.jpg" class="media innerimg" alt=""/>
-                <img src="../img/mine/cg/ray/6.jpg" class="media innerimg" alt=""/>
+                <p>Rendered at 2000 ssp</p>
+                <img src="../img/mine/cg/pt/2.jpg" class="media" alt=""/>
+                <p>Rendered at 2500 ssp</p>
+                <img src="../img/mine/cg/pt/5.jpg" class="media" alt=""/>
+                <p>Depth of field effect</p>
+                <img src="../img/mine/cg/pt/4.jpg" class="media" alt=""/>
+
+
 
 
 
